@@ -1,8 +1,8 @@
 module "vpc" {
-  source = "https://github.com/Dgadavin/terraform-aws-course/tree/master/modules/VPC"
+  source = "github.com/Dgadavin/terraform-aws-course/tree/master/modules/vpc"
 }
 
 module "ssh-keys" {
-  source = "https://github.com/Dgadavin/terraform-aws-course/tree/master/modules/ssh"
+  source = "github.com/Dgadavin/terraform-aws-course/tree/master/modules/ssh"
   ssh_key = "${var.ssh_key}"
 }
