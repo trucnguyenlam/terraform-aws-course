@@ -24,11 +24,3 @@ variable "ebs_volume_type" {default = "gp2"}
 variable "ssh_username" {default = "ec2-user"}
 variable "role" {default = "web-server"}
 variable "ssh_key" {default = "~/.ssh/terraform.pub"}
-
-
-variable "vpc_id" {}
-variable "auth_service_port" {}
-variable "index_service_port" {}
-variable "mock_service_port" {}
-variable "ssh_port" {}
-variable "dynamodb_port" {default = "8000"}
